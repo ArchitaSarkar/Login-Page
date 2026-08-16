@@ -13,7 +13,10 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://architasarkar.github.io/Login-Page/', // Your exact GitHub Pages URL
+    credentials: true
+}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
