@@ -18,7 +18,7 @@ function Register({ onRegister, onSwitch }) {
 
     try {
       const response = await axios.post(
-        `${API_URL}/auth/register`,
+        `${API_URL}/api/auth/register`,
         {
           name,
           email,
